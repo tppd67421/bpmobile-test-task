@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bpmobile-test-task</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script defer type="module" src="app/index.js"></script>
+</head>
+<body>
+    
+    <div id="root">
+        <article class="canvas-size">
+            <input type="text" class="canvas-size__input-width">
+            <input type="text" class="canvas-size__input-height">
+        </article>
+
+        <div class="canvas"></div>
+
+        <form action="#" class="set-object">
+            <input placeholder="x" type="text" class="set-object__x">
+            <input placeholder="y" type="text" class="set-object__y">
+            <button class="set-object__button">Set object</button>
+        </form>
+
+        <form action="#" class="get-object">
+            <input placeholder="x" type="text" class="get-object__x">
+            <input placeholder="y" type="text" class="get-object__y">
+            <button class="get-object__button">Get object</button>
+        </form>
+
+        <form action="#" class="move-object-to-coordinates">
+            <input placeholder="x" type="text" class="move-object-to-coordinates__x">
+            <input placeholder="y" type="text" class="move-object-to-coordinates__y">
+            <button class="move-object-to-coordinates__button">Move object to coordinates</button>
+        </form>
+
+        <form action="#" class="move-object-to-distance">
+            <input placeholder="x" type="text" class="move-object-to-distance__x">
+            <input placeholder="y" type="text" class="move-object-to-distance__y">
+            <button class="move-object-to-distance__button">Move object to distance</button>
+        </form>
+
+        <form action="#" class="rotate-around">
+            <input placeholder="x" type="text" class="rotate-around__x">
+            <input placeholder="y" type="text" class="rotate-around__y">
+            <input placeholder="radius" type="text" class="rotate-around__radius">
+            <input placeholder="angle in deg" type="text" class="rotate-around__angle">
+            <button class="rotate-around__button">Rotate around</button>
+        </form>
+    </div>
+    
+</body>
+</html>

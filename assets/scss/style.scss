@@ -1,0 +1,42 @@
+// @import 'reset';
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.canvas {
+    width: 90vh;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: red;
+    position: relative;
+    &__col-wrap,
+    &__row-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.4;
+    }
+    &__col-wrap {
+        flex-direction: column;
+    }
+    &__col-item {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+    &__row-item {
+        width: 3px;
+        height: 100%;
+        background-color: black;
+    }
+    &__object {
+        position: absolute;
+        transition: 2s linear;
+    }
+}
